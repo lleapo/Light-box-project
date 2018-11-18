@@ -835,9 +835,9 @@
 <attribute name="NAME" x="161.02631875" y="81.783159375" size="1.782240625" layer="95" rot="R90"/>
 <attribute name="VALUE" x="168.9148" y="81.785440625" size="1.780240625" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="154.94" y="93.98">
-<attribute name="NAME" x="151.12403125" y="95.989740625" size="1.78078125" layer="95"/>
-<attribute name="VALUE" x="151.122209375" y="90.41673125" size="1.781640625" layer="96"/>
+<instance part="R4" gate="G$1" x="157.48" y="93.98">
+<attribute name="NAME" x="153.66403125" y="95.989740625" size="1.78078125" layer="95"/>
+<attribute name="VALUE" x="153.662209375" y="90.41673125" size="1.781640625" layer="96"/>
 </instance>
 <instance part="R5" gate="G$1" x="99.06" y="104.14" rot="R90">
 <attribute name="NAME" x="97.050259375" y="100.32403125" size="1.78078125" layer="95" rot="R90"/>
@@ -980,11 +980,10 @@
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="160.02" y1="93.98" x2="162.56" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
-<junction x="162.56" y="93.98"/>
+<junction x="165.1" y="93.98"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1012,6 +1011,12 @@
 <segment>
 <pinref part="IC1" gate="IC" pin="PC6(!RESET!)"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC1" gate="IC" pin="(OC1A)PB1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
